@@ -24,9 +24,9 @@ for i, env_spec in enumerate(all_envs):
 				print('ERROR')
 				quit()
 		env.close()
-	except DependencyNotInstalled as exception: # Raised for MuJoCo
+	except DependencyNotInstalled as exception: # Raised for MuJoCo if not installed
 		print()
 		print(env_spec.id)
 		print('MuJoCo')
-	if i == 10:
+	if i == 30:
 		break
